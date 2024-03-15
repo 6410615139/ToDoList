@@ -18,6 +18,8 @@ struct RegisterView: View {
                     .textFieldStyle(DefaultTextFieldStyle())
                 TextField("Email Address", text: $viewModel.email)
                     .textFieldStyle(DefaultTextFieldStyle())
+                    .autocorrectionDisabled()
+                    .autocapitalization(.none)
                 SecureField("Password", text: $viewModel.password)
                     .textFieldStyle(DefaultTextFieldStyle())
                 TDLButton(title: "Create Account", background: .green) {

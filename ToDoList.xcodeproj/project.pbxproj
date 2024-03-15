@@ -182,8 +182,8 @@
 				CE797D262B9AB75300EDBAB8 /* RegisterViewModel.swift */,
 				CE797D282B9AB76300EDBAB8 /* ToDoListViewModel.swift */,
 				CE797D2A2B9AB76C00EDBAB8 /* ProfileViewModel.swift */,
-				CE797D2C2B9AB77E00EDBAB8 /* NewItemViewModel.swift */,
 				CE797D2E2B9AB79800EDBAB8 /* ToDoListItemViewModel.swift */,
+				CE797D2C2B9AB77E00EDBAB8 /* NewItemViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";

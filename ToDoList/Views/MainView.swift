@@ -9,6 +9,7 @@ import SwiftUI
 
 struct MainView: View {
     @StateObject var viewModel = MainViewModel()
+    
     var body: some View {
         if  viewModel.isSignedIn,
             !viewModel.currentUserId.isEmpty {
@@ -20,12 +21,12 @@ struct MainView: View {
     
     var accountView: some View {
         TabView {
-            ToDoListView()
+            ToDoListView(userId: viewModel.currentUserId)
                 .tabItem {
                     Label("Home", systemImage: "house")
                 }
             
-            ProfileView()
+            ProfileView(viewModel: ProfileViewModel())
                 .tabItem {
                     Label("Profile", systemImage: "person.circle")
                 }
